@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "2rem" }}>
-      <h1>React + Spring Boot Connected!fff</h1>
+      <h1>React + Spring Boot Connected!</h1>
       <p>{message}</p>
     </div>
   );
