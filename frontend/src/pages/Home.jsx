@@ -11,7 +11,8 @@ const Home = () => {
 </header>
 
 
-<main className="main two-column">
+<main className="main three-column">
+  {/* Column 1: Comments */}
   <aside className="comments">
     <h2>Live Comments</h2>
     <div className="comments-box">
@@ -21,30 +22,35 @@ const Home = () => {
       <button>Submit</button>
     </div>
   </aside>
-  <section className="recent">
-    <h2>Most Recent Resources</h2>
-    <div className="recent-items-vertical">
-      <div className="item">
-        <h3>Latest Video</h3>
-        <video width="320" height="240" controls>
-          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-<div className="item">
-  <h3>Latest Document</h3>
-  <img
-    src="https://via.placeholder.com/200x250.png?text=Document+Preview"
-    alt="Document preview"
-    style={{ marginBottom: "0.5rem", borderRadius: "4px" }}
-  />
-  <a href="#">Download: WMS Design Spec.pdf</a>
-</div>
 
-    </div>
+  {/* Column 2: Welcome + video */}
+  <section className="welcome">
+    <h2>Welcome to the Developer Hub</h2>
+    <p>
+      Here you can find the latest onboarding videos and helpful project content.
+    </p>
+    <video width="300" controls style={{ marginTop: "1rem" }}>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
   </section>
-</main>
 
+  {/* Column 3: Most recent upload */}
+<section className="recent">
+  <h2>Most Recent Upload</h2>
+  <div className="recent-upload">
+    <h3>Latest Upload Preview</h3>
+    <video width="200" controls style={{ marginBottom: "0.5rem", borderRadius: "4px" }}>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <p>
+      <a href="#">Download: document.pdf</a>
+    </p>
+  </div>
+</section>
+
+</main>
 
 
       <footer className="footer">

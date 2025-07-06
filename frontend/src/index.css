@@ -123,35 +123,53 @@ code {
   background-color: #1c3aa9;
 }
 
-.two-column {
+.three-column {
   display: flex;
-  align-items: flex-start;
   gap: 2rem;
   padding: 2rem;
+  align-items: flex-start;
 }
 
-.comments {
-  flex: 3; /* wider */
+.comments,
+.welcome,
+.recent {
+  flex: 1;
   background: #f8f9fa;
   padding: 1rem;
   border-radius: 6px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-.recent {
-  flex: 1; /* takes about 25% of screen space */
+.comments textarea {
+  width: 100%;
+  padding: 0.5rem;
 }
 
-.recent-items-vertical {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.comments button {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comments button:hover {
+  background-color: #1c3aa9;
 }
 
 .item {
-  background: #f8f9fa;
-  padding: 1rem;
-  border-radius: 6px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
   text-align: center;
+}
+
+.recent-upload {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-upload a {
+  margin-top: 0.5rem;
 }
