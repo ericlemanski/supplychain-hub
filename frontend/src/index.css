@@ -11,3 +11,147 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #1e40af;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* controls space between links */
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.nav-links {
+  margin-top: 2rem;
+}
+
+.nav-links a {
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #1e40af;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  background-color: #1c3aa9;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.recent {
+  margin-bottom: 2rem;
+}
+
+.recent-items {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.comments {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.comments textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.comments button {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comments button:hover {
+  background-color: #1c3aa9;
+}
+
+.two-column {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.comments {
+  flex: 3; /* wider */
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.recent {
+  flex: 1; /* takes about 25% of screen space */
+}
+
+.recent-items-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
