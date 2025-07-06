@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Home = () => {
-  const [selectedSoftware, setSelectedSoftware] = useState("");
+  const [selectedSoftware, setSelectedSoftware] = useState("blueyonder");
 
   const getSoftwareLink = (software, section) => {
     return `/${software}/${section}`;
@@ -20,8 +20,8 @@ const Home = () => {
     Select Software...
   </option>
   <option value="blueyonder">Blue Yonder</option>
-  <option value="sap">SAP</option>
-  <option value="manhattan">Manhattan</option>
+  <option value="sap" disabled>SAP (coming soon)</option>
+  <option value="manhattan" disabled>Manhattan (coming soon)</option>
 </select>
 {selectedSoftware && (
   <nav className="menu">
